@@ -1,0 +1,168 @@
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Main container */
+#app {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #1e40af;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #64748b;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Add button */
+#app > button {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: 0.3s ease;
+}
+
+#app > button:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(22, 163, 74, 0.2);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+}
+
+/* Table header */
+th {
+    background: #1e40af;
+    color: white;
+    padding: 16px 12px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Table cells */
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 15px;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background: #eff6ff;
+}
+
+/* Edit and Delete buttons */
+td button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 2px;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Delete button */
+td:nth-child(5) button {
+    background: #dc2626;
+}
+
+td:nth-child(5) button:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+}
+
+/* Edit button */
+td:nth-child(6) button {
+    background: #2563eb;
+}
+
+td:nth-child(6) button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Smooth table transitions */
+td,
+th {
+    transition: background 0.2s ease;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 8px;
+    }
+
+    #app {
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    td button {
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+}
